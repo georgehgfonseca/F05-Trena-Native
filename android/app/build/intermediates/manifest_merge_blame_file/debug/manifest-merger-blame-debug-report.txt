@@ -1,0 +1,870 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.george.trena"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:9:3-75
+11-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:9:20-73
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:2:3-78
+12-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:2:20-76
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:3:3-76
+13-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:3:20-74
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:4:3-62
+14-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:4:20-60
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:5:3-74
+15-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:5:20-72
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:6:3-64
+16-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:6:20-62
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:7:3-77
+17-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:7:20-75
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:8:3-68
+18-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:8:20-66
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:10:3-63
+19-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:10:20-61
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:11:3-78
+20-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:11:20-76
+21
+22    <queries>
+22-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:12:3-18:13
+23        <intent>
+23-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:13:5-17:14
+24            <action android:name="android.intent.action.VIEW" />
+24-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:14:7-58
+24-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:14:15-56
+25
+26            <category android:name="android.intent.category.BROWSABLE" />
+26-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:15:7-67
+26-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:15:17-65
+27
+28            <data android:scheme="https" />
+28-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:16:7-37
+28-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:16:13-35
+29        </intent>
+30        <!-- Query open documents -->
+31        <intent>
+31-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-19:18
+32            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+32-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-79
+32-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:21-76
+33        </intent>
+34        <intent>
+34-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-20:18
+35
+36            <!-- Required for picking images from the camera roll if targeting API 30 -->
+37            <action android:name="android.media.action.IMAGE_CAPTURE" />
+37-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-73
+37-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:21-70
+38        </intent>
+39        <intent>
+39-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-25:18
+40
+41            <!-- Required for picking images from the camera if targeting API 30 -->
+42            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+42-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-80
+42-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:21-77
+43        </intent>
+44        <intent>
+44-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:10:9-16:18
+45            <action android:name="android.intent.action.GET_CONTENT" />
+45-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:11:13-72
+45-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:11:21-69
+46
+47            <category android:name="android.intent.category.OPENABLE" />
+47-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:13:13-73
+47-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:13:23-70
+48
+49            <data android:mimeType="*/*" />
+49-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:16:7-37
+50        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+51        <package android:name="com.google.android.apps.maps" />
+51-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+51-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+52    </queries>
+53
+54    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+54-->[com.facebook.flipper:flipper:0.125.0] /home/george/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+54-->[com.facebook.flipper:flipper:0.125.0] /home/george/.gradle/caches/transforms-3/95e931fbbfdb29d8fe263063f71e1fc3/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+55    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+55-->[:react-native-community_netinfo] /home/george/Desktop/TrenaNative/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+55-->[:react-native-community_netinfo] /home/george/Desktop/TrenaNative/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+56    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+56-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+56-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+57
+58    <uses-feature
+58-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:25:5-27:36
+59        android:name="android.hardware.camera"
+59-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:26:9-47
+60        android:required="false" />
+60-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:27:9-33
+61    <uses-feature
+61-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:28:5-30:36
+62        android:name="android.hardware.camera.autofocus"
+62-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:29:9-57
+63        android:required="false" />
+63-->[com.google.android:cameraview:1.0.0] /home/george/.gradle/caches/transforms-3/dcaf9fd173ef5e81be668fa1bf2a96e2/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:30:9-33
+64
+65    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+65-->[androidx.biometric:biometric:1.1.0] /home/george/.gradle/caches/transforms-3/f01a9b99b3a22fc820df6d24c684ff60/transformed/biometric-1.1.0/AndroidManifest.xml:24:5-72
+65-->[androidx.biometric:biometric:1.1.0] /home/george/.gradle/caches/transforms-3/f01a9b99b3a22fc820df6d24c684ff60/transformed/biometric-1.1.0/AndroidManifest.xml:24:22-69
+66    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+66-->[androidx.biometric:biometric:1.1.0] /home/george/.gradle/caches/transforms-3/f01a9b99b3a22fc820df6d24c684ff60/transformed/biometric-1.1.0/AndroidManifest.xml:27:5-74
+66-->[androidx.biometric:biometric:1.1.0] /home/george/.gradle/caches/transforms-3/f01a9b99b3a22fc820df6d24c684ff60/transformed/biometric-1.1.0/AndroidManifest.xml:27:22-71
+67    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+67-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+67-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+68    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+68-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+68-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+69
+70    <uses-feature
+70-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+71        android:glEsVersion="0x00020000"
+71-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+72        android:required="true" />
+72-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+73
+74    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+74-->[com.android.installreferrer:installreferrer:1.0] /home/george/.gradle/caches/transforms-3/4bfaad059e4da08f9ed69638f9052466/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+74-->[com.android.installreferrer:installreferrer:1.0] /home/george/.gradle/caches/transforms-3/4bfaad059e4da08f9ed69638f9052466/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+75    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+75-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+75-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+76    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" /> <!-- for android -->
+76-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+76-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+77    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+78    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+79    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+80    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+81    <!-- for Samsung -->
+82    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+83    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+84    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+85    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+86    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+87    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+88    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+89    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+89-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+89-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+90    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+90-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+90-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+91    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+91-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+91-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+92    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+92-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+92-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+93    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+93-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+93-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+94    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+94-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+94-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+95    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+95-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+95-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+96    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+96-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+96-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+97    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+97-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+97-->[me.leolin:ShortcutBadger:1.1.22] /home/george/.gradle/caches/transforms-3/97432df0affaf446c2adfddd925dc2e6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+98
+99    <application
+99-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:3-40:17
+100        android:name="com.george.trena.MainApplication"
+100-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:16-47
+101        android:allowBackup="true"
+101-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:162-188
+102        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+102-->[androidx.core:core:1.7.0] /home/george/.gradle/caches/transforms-3/b5a8e99dac667ebea08e9f9757d3b404/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+103        android:debuggable="true"
+104        android:icon="@mipmap/ic_launcher"
+104-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:81-115
+105        android:label="@string/app_name"
+105-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:48-80
+106        android:roundIcon="@mipmap/ic_launcher_round"
+106-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:116-161
+107        android:theme="@style/AppTheme"
+107-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:189-220
+108        android:usesCleartextTraffic="true" >
+108-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:19:221-256
+109        <meta-data
+109-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:20:5-136
+110            android:name="expo.modules.notifications.default_notification_color"
+110-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:20:16-84
+111            android:resource="@color/notification_icon_color" />
+111-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:20:85-134
+112        <meta-data
+112-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:21:5-132
+113            android:name="expo.modules.notifications.default_notification_icon"
+113-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:21:16-83
+114            android:resource="@drawable/notification_icon" />
+114-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:21:84-130
+115        <meta-data
+115-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:22:5-82
+116            android:name="expo.modules.updates.ENABLED"
+116-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:22:16-59
+117            android:value="true" />
+117-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:22:60-80
+118        <meta-data
+118-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:23:5-93
+119            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+119-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:23:16-68
+120            android:value="46.0.0" />
+120-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:23:69-91
+121        <meta-data
+121-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:24:5-105
+122            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+122-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:24:16-80
+123            android:value="ALWAYS" />
+123-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:24:81-103
+124        <meta-data
+124-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:25:5-99
+125            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+125-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:25:16-79
+126            android:value="0" />
+126-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:25:80-97
+127        <meta-data
+127-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:26:5-119
+128            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+128-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:26:16-67
+129            android:value="https://exp.host/@fonseca90/Trena" />
+129-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:26:68-117
+130
+131        <activity
+131-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:5-38:16
+132            android:name="com.george.trena.MainActivity"
+132-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:15-43
+133            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+133-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:77-154
+134            android:exported="true"
+134-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:276-299
+135            android:label="@string/app_name"
+135-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:44-76
+136            android:launchMode="singleTask"
+136-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:155-186
+137            android:screenOrientation="portrait"
+137-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:300-336
+138            android:theme="@style/Theme.App.SplashScreen"
+138-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:230-275
+139            android:windowSoftInputMode="adjustResize" >
+139-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:27:187-229
+140            <intent-filter>
+140-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:28:7-31:23
+141                <action android:name="android.intent.action.MAIN" />
+141-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:9-60
+141-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:17-58
+142
+143                <category android:name="android.intent.category.LAUNCHER" />
+143-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:30:9-68
+143-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:30:19-66
+144            </intent-filter>
+145            <intent-filter>
+145-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:32:7-37:23
+146                <action android:name="android.intent.action.VIEW" />
+146-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:14:7-58
+146-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:14:15-56
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:34:9-67
+148-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:34:19-65
+149                <category android:name="android.intent.category.BROWSABLE" />
+149-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:15:7-67
+149-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:15:17-65
+150
+151                <data android:scheme="com.george.trena" />
+151-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:16:7-37
+151-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:16:13-35
+152            </intent-filter>
+153        </activity>
+154        <activity
+154-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:39:5-106
+155            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+155-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:39:15-79
+156            android:exported="false" />
+156-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:39:80-104
+157
+158        <provider
+158-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-32:20
+159            android:name="expo.modules.filesystem.FileSystemFileProvider"
+159-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-74
+160            android:authorities="com.george.trena.FileSystemFileProvider"
+160-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-74
+161            android:exported="false"
+161-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-37
+162            android:grantUriPermissions="true" >
+162-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-47
+163            <meta-data
+163-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:70
+164                android:name="android.support.FILE_PROVIDER_PATHS"
+164-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-67
+165                android:resource="@xml/file_system_provider_paths" />
+165-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-67
+166        </provider>
+167
+168        <activity
+168-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-31:59
+169            android:name="com.canhub.cropper.CropImageActivity"
+169-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-64
+170            android:exported="true"
+170-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:35:13-36
+171            android:theme="@style/Base.Theme.AppCompat" /> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+171-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-56
+172        <provider
+172-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:9-41:20
+173            android:name="expo.modules.imagepicker.fileprovider.ImagePickerFileProvider"
+173-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-89
+174            android:authorities="com.george.trena.ImagePickerFileProvider"
+174-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-75
+175            android:exported="false"
+175-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-37
+176            android:grantUriPermissions="true" >
+176-->[:expo-image-picker] /home/george/Desktop/TrenaNative/node_modules/expo-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-47
+177            <meta-data
+177-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:70
+178                android:name="android.support.FILE_PROVIDER_PATHS"
+178-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-67
+179                android:resource="@xml/image_picker_provider_paths" />
+179-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-67
+180        </provider>
+181
+182        <service
+182-->[:expo-location] /home/george/Desktop/TrenaNative/node_modules/expo-location/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:56
+183            android:name="expo.modules.location.services.LocationTaskService"
+183-->[:expo-location] /home/george/Desktop/TrenaNative/node_modules/expo-location/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-78
+184            android:exported="false"
+184-->[:expo-location] /home/george/Desktop/TrenaNative/node_modules/expo-location/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+185            android:foregroundServiceType="location" />
+185-->[:expo-location] /home/george/Desktop/TrenaNative/node_modules/expo-location/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+186        <service
+186-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-18:19
+187            android:name="expo.modules.notifications.service.ExpoFirebaseMessagingService"
+187-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-91
+188            android:exported="false" >
+188-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+189            <intent-filter android:priority="-1" >
+189-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:29
+189-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:28-49
+190                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+190-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-78
+190-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:25-75
+191            </intent-filter>
+192        </service>
+193
+194        <receiver
+194-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-32:20
+195            android:name="expo.modules.notifications.service.NotificationsService"
+195-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-83
+196            android:enabled="true"
+196-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-35
+197            android:exported="false" >
+197-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-37
+198            <intent-filter android:priority="-1" >
+198-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-31:29
+198-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:28-49
+199                <action android:name="expo.modules.notifications.NOTIFICATION_EVENT" />
+199-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-88
+199-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-85
+200                <action android:name="android.intent.action.BOOT_COMPLETED" />
+200-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+200-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+201                <action android:name="android.intent.action.REBOOT" />
+201-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-71
+201-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-68
+202                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+202-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+202-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+203                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+203-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+203-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+204                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+204-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-84
+204-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-81
+205            </intent-filter>
+206        </receiver>
+207
+208        <activity
+208-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-41:75
+209            android:name="expo.modules.notifications.service.NotificationForwarderActivity"
+209-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-92
+210            android:excludeFromRecents="true"
+210-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-46
+211            android:exported="false"
+211-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+212            android:launchMode="standard"
+212-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-42
+213            android:noHistory="true"
+213-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-37
+214            android:taskAffinity=""
+214-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-36
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-72
+216
+217        <meta-data
+217-->[:expo-modules-core] /home/george/Desktop/TrenaNative/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:89
+218            android:name="org.unimodules.core.AppLoader#react-native-headless"
+218-->[:expo-modules-core] /home/george/Desktop/TrenaNative/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-79
+219            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+219-->[:expo-modules-core] /home/george/Desktop/TrenaNative/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-86
+220
+221        <provider
+221-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:23:9-31:20
+222            android:name="com.canhub.cropper.CropFileProvider"
+222-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:24:13-63
+223            android:authorities="com.george.trena.cropper.fileprovider"
+223-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:25:13-72
+224            android:exported="false"
+224-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:26:13-37
+225            android:grantUriPermissions="true" >
+225-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:27:13-47
+226            <meta-data
+226-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-31:70
+227                android:name="android.support.FILE_PROVIDER_PATHS"
+227-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-67
+228                android:resource="@xml/library_file_paths" />
+228-->[:expo-file-system] /home/george/Desktop/TrenaNative/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-67
+229        </provider> <!-- This is here because the library did not update yet to Android 12 so we force the exported value when merging manifests -->
+230        <activity
+230-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:38:9-45:20
+231            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+231-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:39:13-99
+232            android:exported="true"
+232-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:40:13-36
+233            android:theme="@android:style/Theme" >
+233-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:41:13-49
+234            <intent-filter>
+234-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:42:13-44:29
+235                <action android:name="android.intent.action.MAIN" />
+235-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:9-60
+235-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:17-58
+236            </intent-filter>
+237        </activity>
+238        <activity
+238-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:46:9-53:20
+239            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+239-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:47:13-95
+240            android:exported="true"
+240-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:48:13-36
+241            android:theme="@android:style/Theme" >
+241-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:49:13-49
+242            <intent-filter>
+242-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:42:13-44:29
+243                <action android:name="android.intent.action.MAIN" />
+243-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:9-60
+243-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:17-58
+244            </intent-filter>
+245        </activity>
+246        <activity
+246-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:54:9-61:20
+247            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+247-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:55:13-103
+248            android:exported="true"
+248-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:56:13-36
+249            android:theme="@android:style/Theme.Dialog" >
+249-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:57:13-56
+250            <intent-filter>
+250-->[com.github.CanHub:Android-Image-Cropper:4.3.0] /home/george/.gradle/caches/transforms-3/305180749d6b5e3261860db0a0dc3afe/transformed/jetified-Android-Image-Cropper-4.3.0/AndroidManifest.xml:42:13-44:29
+251                <action android:name="android.intent.action.MAIN" />
+251-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:9-60
+251-->/home/george/Desktop/TrenaNative/android/app/src/main/AndroidManifest.xml:29:17-58
+252            </intent-filter>
+253        </activity>
+254
+255        <provider
+255-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+256            android:name="androidx.startup.InitializationProvider"
+256-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+257            android:authorities="com.george.trena.androidx-startup"
+257-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+258            android:exported="false" >
+258-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+259            <meta-data
+259-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+260                android:name="androidx.work.WorkManagerInitializer"
+260-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+261                android:value="androidx.startup" />
+261-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+262            <meta-data
+262-->[androidx.emoji2:emoji2:1.0.0] /home/george/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+263                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+263-->[androidx.emoji2:emoji2:1.0.0] /home/george/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+264                android:value="androidx.startup" />
+264-->[androidx.emoji2:emoji2:1.0.0] /home/george/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+265            <meta-data
+265-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/george/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+266                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+266-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/george/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+267                android:value="androidx.startup" />
+267-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/george/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+268        </provider>
+269
+270        <service
+270-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+271            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+271-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+272            android:directBootAware="false"
+272-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+273            android:enabled="@bool/enable_system_alarm_service_default"
+273-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+274            android:exported="false" />
+274-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+275        <service
+275-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+276            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+276-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+277            android:directBootAware="false"
+277-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+278            android:enabled="@bool/enable_system_job_service_default"
+278-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+279            android:exported="true"
+279-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+280            android:permission="android.permission.BIND_JOB_SERVICE" />
+280-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+281        <service
+281-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+282            android:name="androidx.work.impl.foreground.SystemForegroundService"
+282-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+283            android:directBootAware="false"
+283-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+284            android:enabled="@bool/enable_system_foreground_service_default"
+284-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+285            android:exported="false" />
+285-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+286
+287        <receiver
+287-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+288            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+288-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+289            android:directBootAware="false"
+289-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+290            android:enabled="true"
+290-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+291            android:exported="false" />
+291-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+292        <receiver
+292-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+293            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+293-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+294            android:directBootAware="false"
+294-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+295            android:enabled="false"
+295-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+296            android:exported="false" >
+296-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+297            <intent-filter>
+297-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+298                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+298-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+298-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+299                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+299-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+299-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+300            </intent-filter>
+301        </receiver>
+302        <receiver
+302-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+303            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+303-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+304            android:directBootAware="false"
+304-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+305            android:enabled="false"
+305-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+306            android:exported="false" >
+306-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+307            <intent-filter>
+307-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+308                <action android:name="android.intent.action.BATTERY_OKAY" />
+308-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+308-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+309                <action android:name="android.intent.action.BATTERY_LOW" />
+309-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+309-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+310            </intent-filter>
+311        </receiver>
+312        <receiver
+312-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+313            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+313-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+314            android:directBootAware="false"
+314-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+315            android:enabled="false"
+315-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+316            android:exported="false" >
+316-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+317            <intent-filter>
+317-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+318                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+318-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+318-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+319                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+319-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+319-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+320            </intent-filter>
+321        </receiver>
+322        <receiver
+322-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+323            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+323-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+324            android:directBootAware="false"
+324-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+325            android:enabled="false"
+325-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+326            android:exported="false" >
+326-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+327            <intent-filter>
+327-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+328                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+328-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+328-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+329            </intent-filter>
+330        </receiver>
+331        <receiver
+331-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+332            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+332-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+333            android:directBootAware="false"
+333-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+334            android:enabled="false"
+334-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+335            android:exported="false" >
+335-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+336            <intent-filter>
+336-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+337                <action android:name="android.intent.action.BOOT_COMPLETED" />
+337-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+337-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+338                <action android:name="android.intent.action.TIME_SET" />
+338-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+338-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+339                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+339-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+339-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+340            </intent-filter>
+341        </receiver>
+342        <receiver
+342-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+343            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+343-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+344            android:directBootAware="false"
+344-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+345            android:enabled="@bool/enable_system_alarm_service_default"
+345-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+346            android:exported="false" >
+346-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+347            <intent-filter>
+347-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+348                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+348-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+348-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+349            </intent-filter>
+350        </receiver>
+351        <receiver
+351-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+352            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+352-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+353            android:directBootAware="false"
+353-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+354            android:enabled="true"
+354-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+355            android:exported="true"
+355-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+356            android:permission="android.permission.DUMP" >
+356-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+357            <intent-filter>
+357-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+358                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+358-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+358-->[androidx.work:work-runtime:2.7.1] /home/george/.gradle/caches/transforms-3/f3af2088cc87a248b899547dd69bf240/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+359            </intent-filter>
+360        </receiver>
+361
+362        <service
+362-->[androidx.room:room-runtime:2.4.2] /home/george/.gradle/caches/transforms-3/f3ed993e150b485b30e21ebc9cdc39f4/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+363            android:name="androidx.room.MultiInstanceInvalidationService"
+363-->[androidx.room:room-runtime:2.4.2] /home/george/.gradle/caches/transforms-3/f3ed993e150b485b30e21ebc9cdc39f4/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+364            android:directBootAware="true"
+364-->[androidx.room:room-runtime:2.4.2] /home/george/.gradle/caches/transforms-3/f3ed993e150b485b30e21ebc9cdc39f4/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+365            android:exported="false" />
+365-->[androidx.room:room-runtime:2.4.2] /home/george/.gradle/caches/transforms-3/f3ed993e150b485b30e21ebc9cdc39f4/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+366
+367        <receiver
+367-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+368            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+368-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+369            android:exported="true"
+369-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+370            android:permission="com.google.android.c2dm.permission.SEND" >
+370-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+371            <intent-filter>
+371-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:32:13-34:29
+372                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+372-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:33:17-81
+372-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:33:25-78
+373            </intent-filter>
+374        </receiver>
+375        <!--
+376             FirebaseMessagingService performs security checks at runtime,
+377             but set to not exported to explicitly avoid allowing another app to call it.
+378        -->
+379        <service
+379-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+380            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+380-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+381            android:directBootAware="true"
+381-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+382            android:exported="false" >
+382-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+383            <intent-filter android:priority="-500" >
+383-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:29
+383-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:28-49
+384                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+384-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-78
+384-->[:expo-notifications] /home/george/Desktop/TrenaNative/node_modules/expo-notifications/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:25-75
+385            </intent-filter>
+386        </service>
+387        <service
+387-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:49:9-55:19
+388            android:name="com.google.firebase.components.ComponentDiscoveryService"
+388-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:50:13-84
+389            android:directBootAware="true"
+389-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+390            android:exported="false" >
+390-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+391            <meta-data
+391-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+392                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+392-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+393                android:value="com.google.firebase.components.ComponentRegistrar" />
+393-->[com.google.firebase:firebase-messaging:22.0.0] /home/george/.gradle/caches/transforms-3/2f927f694c7a39ded8e1b9bc74503035/transformed/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+394            <meta-data
+394-->[com.google.firebase:firebase-datatransport:18.0.0] /home/george/.gradle/caches/transforms-3/7029e9e5a28a85e7a192c6eb97f4dc8b/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+395                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+395-->[com.google.firebase:firebase-datatransport:18.0.0] /home/george/.gradle/caches/transforms-3/7029e9e5a28a85e7a192c6eb97f4dc8b/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+396                android:value="com.google.firebase.components.ComponentRegistrar" />
+396-->[com.google.firebase:firebase-datatransport:18.0.0] /home/george/.gradle/caches/transforms-3/7029e9e5a28a85e7a192c6eb97f4dc8b/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+397            <meta-data
+397-->[com.google.firebase:firebase-installations:17.0.0] /home/george/.gradle/caches/transforms-3/c18970c0ee799cc18e03224cfd5c2caa/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+398                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+398-->[com.google.firebase:firebase-installations:17.0.0] /home/george/.gradle/caches/transforms-3/c18970c0ee799cc18e03224cfd5c2caa/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+399                android:value="com.google.firebase.components.ComponentRegistrar" />
+399-->[com.google.firebase:firebase-installations:17.0.0] /home/george/.gradle/caches/transforms-3/c18970c0ee799cc18e03224cfd5c2caa/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+400        </service>
+401        <service
+401-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+402            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+402-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+403            android:exported="false" >
+403-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+404            <meta-data
+404-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+405                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+405-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+406                android:value="cct" />
+406-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /home/george/.gradle/caches/transforms-3/141917e238fe5ac068d4eaadabdf5c9b/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+407        </service>
+408        <service
+408-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+409            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+409-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+410            android:exported="false"
+410-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+411            android:permission="android.permission.BIND_JOB_SERVICE" >
+411-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+412        </service>
+413
+414        <receiver
+414-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+415            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+415-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+416            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+416-->[com.google.android.datatransport:transport-runtime:3.0.0] /home/george/.gradle/caches/transforms-3/39b1a1007979015b22763796853dfa36/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+417        <uses-library
+417-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+418            android:name="org.apache.http.legacy"
+418-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+419            android:required="false" />
+419-->[com.google.android.gms:play-services-maps:18.0.2] /home/george/.gradle/caches/transforms-3/f43958353e9b14ed9c30ad9dba6b0ed1/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+420
+421        <activity
+421-->[com.google.android.gms:play-services-base:18.1.0] /home/george/.gradle/caches/transforms-3/280d561bf4718d8b0a3a366e10f89d2f/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+422            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+422-->[com.google.android.gms:play-services-base:18.1.0] /home/george/.gradle/caches/transforms-3/280d561bf4718d8b0a3a366e10f89d2f/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+423            android:exported="false"
+423-->[com.google.android.gms:play-services-base:18.1.0] /home/george/.gradle/caches/transforms-3/280d561bf4718d8b0a3a366e10f89d2f/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+424            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+424-->[com.google.android.gms:play-services-base:18.1.0] /home/george/.gradle/caches/transforms-3/280d561bf4718d8b0a3a366e10f89d2f/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+425
+426        <provider
+426-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+427            android:name="com.google.firebase.provider.FirebaseInitProvider"
+427-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+428            android:authorities="com.george.trena.firebaseinitprovider"
+428-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+429            android:directBootAware="true"
+429-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+430            android:exported="false"
+430-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+431            android:initOrder="100" />
+431-->[com.google.firebase:firebase-common:20.0.0] /home/george/.gradle/caches/transforms-3/03589010499dcd52aa356398bf8a28f0/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+432
+433        <meta-data
+433-->[com.google.android.gms:play-services-basement:18.1.0] /home/george/.gradle/caches/transforms-3/c4a31fd14589e82e6ec6c1e2c7d1bf1f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+434            android:name="com.google.android.gms.version"
+434-->[com.google.android.gms:play-services-basement:18.1.0] /home/george/.gradle/caches/transforms-3/c4a31fd14589e82e6ec6c1e2c7d1bf1f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+435            android:value="@integer/google_play_services_version" />
+435-->[com.google.android.gms:play-services-basement:18.1.0] /home/george/.gradle/caches/transforms-3/c4a31fd14589e82e6ec6c1e2c7d1bf1f/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+436
+437        <service
+437-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+438            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+438-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+439            android:exported="false" />
+439-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+440        <service
+440-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+441            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+441-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+442            android:exported="false" />
+442-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+443        <service
+443-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+444            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+444-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+445            android:exported="false" />
+445-->[io.nlopez.smartlocation:library:3.2.11] /home/george/.gradle/caches/transforms-3/960f26ea7e78fb176b01d9b5a754fbb2/transformed/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+446    </application>
+447
+448</manifest>
