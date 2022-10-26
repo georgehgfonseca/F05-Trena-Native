@@ -1,0 +1,4 @@
+{
+  "name": "Trena",
+  "plugins": [["./my-plugin", "custom"]]
+}
